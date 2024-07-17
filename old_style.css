@@ -66,11 +66,14 @@ nav a:hover {
     color: #aaa;
 }
 
-.portfolio-grid{
-    //display: wrap;
+.portfolio-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     padding: 3em;
+}
+
+.portfolio-grid{
     /* From https://css.glass */
     margin:2em;
     background: rgba(255, 255, 255, 0.03);
@@ -79,9 +82,6 @@ nav a:hover {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     //border: 1px solid rgba(255, 255, 255, 0.3);
-    content: "";
-    display: table;
-    clear: both;
 }
 
 img {
@@ -187,25 +187,4 @@ footer a {
 
 .logo {
     display: inline-block; /* Ensure the div behaves like an inline element within the link */
-}
-
-
-// test
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.column .portfolio-item {
-  margin-top: 12px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
